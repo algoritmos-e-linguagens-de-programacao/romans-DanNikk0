@@ -1,4 +1,5 @@
 def int_to_roman(numero):
+
     valores = [
         (1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'),
         (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
@@ -11,7 +12,6 @@ def int_to_roman(numero):
             numero -= valor
     return resultado
 
-# Contar de 1 até 3999 em números romanos
-
-for numero in range(1, 4000):
-    print(f'{numero}: {int_to_roman(numero)}')
+if __name__ == "__main__":
+    for numero in range(1, 4000):
+        print(f'{numero}: {int_to_roman(numero)}')
