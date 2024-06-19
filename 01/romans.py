@@ -20,10 +20,8 @@ def int_to_roman(numero):
     
     return resultado
 
-def contar_em_romano(limite):
+def roman_to_int(limite):
   
     for numero in range(1, limite + 1):
         romano = int_to_roman(numero)
         print(f"{numero}: {romano}")
-
-contar_em_romano(3999)
